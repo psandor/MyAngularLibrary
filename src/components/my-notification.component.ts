@@ -3,7 +3,8 @@ import { Component, OnInit,
   state,
   style,
   transition, keyframes,
-  animate } from '@angular/core';
+  animate,
+} from '@angular/core';
 
 @Component({
     selector: 'my-notification',
@@ -26,11 +27,18 @@ import { Component, OnInit,
 })
 
 export class MyNotificationComponent implements OnInit {
-    constructor() { }
+    constructor() {
+        let timeoutId = setTimeout(() => {  
+            console.log("show notification");
+            
+            this.show("hello", "world");
+        }, 2000);
+     }
 
     title: string;
     content: string;
     animationState: string = 'hidden';
+    
     ngOnInit() { }
 
     show(title: string, content: string){
@@ -40,4 +48,5 @@ export class MyNotificationComponent implements OnInit {
         this.animationState = 'display'
 
     }
+    
 }

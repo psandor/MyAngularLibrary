@@ -1,5 +1,5 @@
 {
-  "name": "My Angular Library",
+  "name": "@sp/angular-component",
   "version": "0.1.11",
   "description": "My Angular Library sample project",
   "main": "index.js",
