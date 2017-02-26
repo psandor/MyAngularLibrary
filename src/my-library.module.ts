@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule } from '@angular/core/index.js';
 
 import { MyNotificationComponent }   from './components/my-notification.component';
 
